@@ -1,0 +1,25 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(-1fr, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+    border: 1px #000 solid;
+}
+
+.content {
+    border: 1px #000 solid;
+    /*    height: 200px; */
+    display: grid;
+}
+
+.header {}
+
+.navbar {}
+
+.services {}
+
+.designs {}
+
+.contact {}
+
+.footer {}
