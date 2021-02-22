@@ -13,8 +13,10 @@
     integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
     crossorigin="anonymous" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap"
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200&family=Montserrat:wght@300&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="/src/css/main.css" />
 </head>
@@ -25,13 +27,15 @@
 
 <body>
   <header>
-    <div class="logo">
+    <!-- <div class="logo">
       <img src="/img/devjane.png" alt="" />
-    </div>
-    <button class="nav-toggle" aria-label="toggle navigation" :>
+    </div> -->
+    <button class="nav-toggle" aria-label="toggle navigation">
       <span class="hamburger"></span>
     </button>
+
     <nav class="nav">
+
       <ul class="nav__list">
         <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
         <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
@@ -48,8 +52,8 @@
       Hi, I am
       <strong>Kaleb Berry</strong>
     </h1>
-    <p class="section__title section__title--intro">front-end dev</p>
-    <img src="/img/dev-jane-01.jpg" alt="A picture of Kaleb Berry" />
+    <p class="section__subtitle section__subtitle--intro">front-end developer</p>
+    <img src="/img/YASU3.png" alt="A picture of Kaleb Berry" class="intro__img" />
   </section>
 
   <!-- My services -->
@@ -86,57 +90,57 @@
   <!-- About Me -->
   <section class="about-me" id="about">
     <h2 class="section__title section__title--about">Who I am</h2>
-    <p class="section__subtitle section__subtitle--about"></p>
+    <p class="section__subtitle section__subtitle--about">Designer & Developer based out of KC</p>
 
     <div class="about-me__body">
-      <p></p>
-      <p></p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada mauris vel condimentum vehicula.
+        Nullam ullamcorper, justo at venenatis aliquam, augue metus imperdiet nulla</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada mauris vel condimentum vehicula.
+        Nullam ullamcorper, justo at venenatis aliquam, augue metus imperdiet nulla</p>
     </div>
 
-    <img src="/img/dev-jane-02.jpg" alt="" />
+    <img src="/img/dev-jane-02.jpg" alt="" class=" about-me__img" />
   </section>
 
   <!-- My Work -->
   <section class="my-work" id="work">
-    <h2 class="section__title section__title--my-work">My Work</h2>
-    <p class="section__subtitle section__subtitle--my-work"></p>
-
+    <h2 class="section__title section__title--my-work">Current Projects</h2>
     <div class="portfolio">
 
       <!-- portfolio item 01 -->
-      <a href="#" class="portfolio_item">
+      <a href="portfolio-item.html" class="portfolio__item">
         <img src="/img/portfolio-01.jpg" alt="" class="portfolio__img" />
       </a>
       <!-- portfolio item 02 -->
-      <a href="#" class="portfolio_item">
+      <a href="portfolio-item.html" class="portfolio__item">
         <img src="/img/portfolio-02.jpg" alt="" class="portfolio__img" />
       </a>
       <!-- portfolio item 03 -->
-      <a href="#" class="portfolio_item">
+      <a href="portfolio-item.html" class="portfolio__item">
         <img src="/img/portfolio-03.jpg" alt="" class="portfolio__img" />
       </a>
       <!-- portfolio item 04 -->
-      <a href="#" class="portfolio_item">
+      <a href="portfolio-item.html" class="portfolio__item">
         <img src="/img/portfolio-04.jpg" alt="" class="portfolio__img" />
       </a>
       <!-- portfolio item 05 -->
-      <a href="#" class="portfolio_item">
+      <a href="portfolio-item.html" class="portfolio__item">
         <img src="/img/portfolio-05.jpg" alt="" class="portfolio__img" />
       </a>
       <!-- portfolio item 06 -->
-      <a href="#" class="portfolio_item">
+      <a href="portfolio-item.html" class="portfolio__item">
         <img src="/img/portfolio-06.jpg" alt="" class="portfolio__img" />
       </a>
       <!-- portfolio item 07 -->
-      <a href="#" class="portfolio_item">
+      <a href="portfolio-item.html" class="portfolio__item">
         <img src="/img/portfolio-07.jpg" alt="" class="portfolio__img" />
       </a>
       <!-- portfolio item 08 -->
-      <a href="#" class="portfolio_item">
+      <a href="portfolio-item.html" class="portfolio__item">
         <img src="/img/portfolio-08.jpg" alt="" class="portfolio__img" />
       </a>
       <!-- portfolio item 09 -->
-      <a href="#" class="portfolio_item">
+      <a href="portfolio-item.html" class="portfolio__item">
         <img src="/img/portfolio-09.jpg" alt="" class="portfolio__img" />
       </a>
 
@@ -144,15 +148,23 @@
   </section>
 
   <!-- Footer -->
-  <footer>
-    <a href="mailto:kalebgberry@gmail.com" class="footer-link">Talk to Me</a>
+  <footer class="footer">
+    <a href="mailto:kalebgberry@gmail.com" class="footer__link">Contact Me</a>
     <ul class="social-list">
-      <li class="social-list__item"><a href="#" class="social-list__link"><i class="fab fa-twitch"></i></a></li>
-      <li class="social-list__item"><a href="#" class="social-list__link"><i class="fab fa-github"></i></a></li>
-      <li class="social-list__item"><a href="#" class="social-list__link"><i class="fab fa-dev"></i></a></li>
-      <li class="social-list__item"><a href="#" class="social-list__link"><i class="fab fa-codepen"></i></a></li>
+      <li class="social-list__item"><a href="https://www.twitch.tv/sorumeiji" class="social-list__link"><i
+            class="fab fa-twitch"></i></a></li>
+      <li class="social-list__item"><a href="https://github.com/Sorumeiji" class="social-list__link"><i
+            class="fab fa-github"></i></a></li>
+      <li class="social-list__item"><a href="https://dev.to/sorumeiji" class="social-list__link"><i
+            class="fab fa-dev"></i></a></li>
+      <li class="social-list__item"><a href="http://codepen.io/sorumeiji" class="social-list__link"><i
+            class="fab fa-codepen"></i></a></li>
     </ul>
   </footer>
+
+
+  <script type="text/javascript" src="./js/index.js"></script>
 </body>
+
 
 </html>
