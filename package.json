@@ -1,0 +1,23 @@
+{
+  "name": "sorumeiji.github.io",
+  "version": "1.0.0",
+  "description": "Personal Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sorumeiji/sorumeiji.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sorumeiji/sorumeiji.github.io/issues"
+  },
+  "homepage": "https://github.com/Sorumeiji/sorumeiji.github.io#readme",
+  "dependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
