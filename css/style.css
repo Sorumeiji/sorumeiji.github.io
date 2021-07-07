@@ -1,12 +1,8 @@
-@font-face {
-    font-family: 'bagnard_regularregular';
-    src: url('../assets/fonts/Bagnard/bagnardsans-webfont.woff2') format('woff2'),
-         url('../assets/fonts/Bagnard/bagnardsans-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap');
+/*
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
+*/
 
 
 /* Box sizing rules */
@@ -100,7 +96,7 @@ select {
 
 .button{
     text-decoration: none;
-    font-family: 'bagnard_regularregular';
+   font-family: 'Bebas Neue', cursive;
     font-size: 0.9rem;
     border: 2px solid #F2E4D8;
     padding: 0.5em 1em;
@@ -169,7 +165,7 @@ select {
 .header__nav-list a{
     color: #F2E4D8;
     text-decoration: none;
-    font-family: 'bagnard_regularregular';
+   font-family: 'Bebas Neue', cursive;
     font-size: 0.8rem;
     transition: 0.3s ease-out;
 }
@@ -201,14 +197,14 @@ select {
 
 .header__title{
     color: #F2E4D8;
-    font-family: 'bagnard_regularregular';
+   font-family: 'Bebas Neue', cursive;
     font-size: 3.157rem;
     padding: 0.5em 0;
 }
 
 .header__text {
     color: #F2E4D8;
-    font-family: 'Crimson Text', serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 1.333rem;
     line-height: 2;
 }
@@ -239,7 +235,7 @@ select {
 
 .specialties__title{
     padding: 1em 0;
-    font-family: 'bagnard_regularregular';
+   font-family: 'Bebas Neue', cursive;
     text-align: center;
     color: #F2E4D8;
     font-size: 2.369rem;
@@ -251,13 +247,13 @@ select {
 }
 .specialties__item-title{
     padding: 1em 0;
-    font-family: 'bagnard_regularregular';
+   font-family: 'Bebas Neue', cursive;
     color: #F2E4D8;
     font-size: 1.777rem;
 }
 
 .specialties__item-text{
-    font-family: 'Crimson Text', serif;
+    font-family: 'Roboto Condensed', sans-serif;
     color: #F2E4D8;
     font-size: 1.333rem;
     line-height: 2;
@@ -276,7 +272,7 @@ select {
 .featured__title{ 
     text-align: center;
     color: #F2E4D8;
-    font-family: 'bagnard_regularregular';
+   font-family: 'Bebas Neue', cursive;
     padding-left: 0;
     margin-left: 0;
     font-size: 2.369rem;
@@ -292,7 +288,7 @@ select {
     flex-direction: column;
     justify-content: center;
     padding: 0.2em 0;
-    font-family: 'bagnard_regularregular';
+   font-family: 'Bebas Neue', cursive;
     color: #D9C1C7;
     font-size: 1.333rem;
 }
@@ -335,7 +331,7 @@ select {
 .featured__item-language-list{
     display: flex;
     padding: 1em 0;
-    font-family: 'bagnard_regularregular';
+   font-family: 'Bebas Neue', cursive;
     color: #F2E4D8;
     font-size: 1rem;
 }
@@ -357,7 +353,7 @@ select {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     text-align: center;
-    font-family: 'bagnard_regularregular';
+   font-family: 'Bebas Neue', cursive;
     color: #F2E4D8;
     font-size: 2.369rem;
 }
@@ -365,7 +361,7 @@ select {
 .contact__text{ 
     padding-top: 0.5em;
     padding-bottom: 1em;
-    font-family: 'Crimson Text', serif;
+    font-family: 'Roboto Condensed', sans-serif;
     color: #F2E4D8;
     font-size: 1.333rem;
     line-height: 2;
@@ -379,7 +375,7 @@ select {
 }
 
 .footer__text{ 
-    font-family: 'Crimson Text', serif;
+    font-family: 'Roboto Condensed', sans-serif;
     color: #F2E4D8;
     font-size: 1rem;
 }
@@ -401,7 +397,7 @@ select {
      
         color: #F2E4D8;
         text-decoration: none;
-        font-family: 'bagnard_regularregular';
+       font-family: 'Bebas Neue', cursive;
         font-size: 1.333rem;
         transition: 0.3s ease-out;
     }
