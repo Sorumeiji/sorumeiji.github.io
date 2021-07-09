@@ -1,7 +1,7 @@
 
 /*
     font-family: 'Bebas Neue', cursive;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto', sans-serif;
 */
 
 
@@ -53,7 +53,6 @@ html:focus-within {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
   background-color: #1C1B22;
   position: relative;
 }
@@ -68,6 +67,7 @@ img,
 picture {
   max-width: 100%;
   display: block;
+  object-fit: cover;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -94,49 +94,40 @@ select {
   }
 }
 
+
+h1 {
+    color: #F2E4D8;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4.3rem;
+     padding: 0.5em 0;
+     letter-spacing: 1.2px;
+ }
+ 
+ h1:after{
+     content: " ";
+     border-bottom: 1px solid #BF5E5E;
+     max-width: 180px;
+     position: relative;
+     bottom: 10px;
+     display: block;
+ }
+ 
+
 .button{
     text-decoration: none;
-   font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue', cursive;
     font-size: 0.9rem;
-    border: 2px solid #F2E4D8;
-    padding: 0.5em 1em;
-    color: #D9C1C7;
-    border-radius: 0.2em;
+    padding: 0.5em 1.5em;
+    color: #F2E4D8;
+    background-color:#BF5E5E;
     display: block;
     transition: 0.3s ease-in;
 }
 
 .button:hover{
     background-color:#BF5E5E;
-    border: 2px solid #D9C1C7;
     color: #F2E4D8;
     transition: 0.3s ease-out;
-}
-
-.splash{
-    position: absolute;
-    display: flex;
-    max-width: 100%;
-    justify-content:center;
-    align-items: center;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-}
-
-.splash img{
-    max-width: 50%;
-}
-
-.nav__toggle{
-    display: none;
-    color: #F2E4D8;
-}
-
-.nav__toggle:hover{
-    cursor: pointer;
 }
 
 .header {
@@ -202,43 +193,18 @@ select {
 
 .header__content {
     display: flex;
-    max-width: 80%;
     margin: 0 auto;
     padding: 5em 0;
     flex-direction: column;
 }
 
-.header__title{
-   color: #F2E4D8;
-   font-family: 'Bebas Neue', cursive;
-   font-size: 3.157rem;
-    padding: 0.5em 0;
-}
-
-.header__title:after{
-    content: " ";
-    border-bottom: 1px solid #BF5E5E;
-    max-width: 180px;
-    position: relative;
-    bottom: 10px;
-    display: block;
-}
 
 .header__text {
     color: #F2E4D8;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 1.333rem;
+    font-family: 'Roboto', sans-serif;
+    max-width: 55%;
+    font-size: 1.728rem;
     line-height: 2;
-}
-
-.header__img{
-    max-width: 40%;
-}
-
-.header__display {
-    display: flex;
-    align-items: center;
-    
 }
 
 .header__display img{ 
@@ -248,71 +214,89 @@ select {
 .specialties{
     display: flex;
     margin: 0 auto;
-    max-width: 80%;
-    padding: 5em 0;
+    padding: 4em 0;
     flex-direction: column;
     background-color: #1C1B22;
 }
 
-
-.specialties__title{
-    padding: 1em 0;
-   font-family: 'Bebas Neue', cursive;
-    text-align: center;
-    color: #F2E4D8;
-    font-size: 2.369rem;
+.specialties__summary{
+    display: flex;
 }
-
 
 .specialties__item{
-    padding: 2.5em 0;
+    padding: 1em 0;
 }
 .specialties__item-title{
-    padding: 1em 0;
-   font-family: 'Bebas Neue', cursive;
+    padding-top: 0.8em;
+    padding-bottom: 0;
+    font-family: 'Bebas Neue', cursive;
     color: #F2E4D8;
-    font-size: 1.777rem;
+    font-size: 2.488rem;
 }
 
 .specialties__item-text{
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     color: #F2E4D8;
-    font-size: 1.333rem;
+    font-size: 1rem;
     line-height: 2;
+    max-width: 80%;
+    margin-right: 2rem;
+    margin-top: 1.5rem;   
 }
-
 
 .featured{ 
     display: flex;
     margin: 0 auto;
-    max-width: 80%;
     padding: 5em 0;
     flex-direction: column;
     background-color: #1C1B22;
 }
 
-.featured__title{ 
-    text-align: center;
-    color: #F2E4D8;
-   font-family: 'Bebas Neue', cursive;
-    padding-left: 0;
-    margin-left: 0;
-    font-size: 2.369rem;
-    padding: 1em 0;
+.featured div {
+    display: flex; /* Makes Button Resize properly */
 }
 
 .featured__item {
-    padding: 2em 0;
+    display: flex;
 }
 
-.featured__item-title {
+.featured__item-summary{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 0.2em 0;
-   font-family: 'Bebas Neue', cursive;
-    color: #D9C1C7;
-    font-size: 1.333rem;
+    margin-left: 2em;
+}
+
+.featured__item-summary h2 {
+    font-family: 'Bebas Neue', cursive;
+    color: #F2E4D8;
+    font-size: 3.583rem;
+    line-height: 0.9;
+}
+
+.featured__item-summary h3{
+    font-family: 'Bebas Neue', cursive;
+    padding-top: 0.5em;
+    color: #F2E4D8;
+    font-size:1.728rem;
+}
+
+.featured__item-summary p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #F2E4D8;
+    font-size: 1rem;
+    line-height: 2;
+    max-width: 55%;
+    margin: 1em 0;
+}
+
+
+.featured__item-summary ul li {
+    display: inline-block;
+    font-family: 'Bebas Neue', cursive;
+    color: #BF5E5E;
+    font-size: 0.833rem;
 }
 
 .featured__item-title h4 {
@@ -342,12 +326,6 @@ select {
     color: #BF5E5E;
 }
 
-.featured__item-preview-img{
-    box-shadow:0 1px 1px rgba(0,0,0,0.08), 
-    0 2px 2px rgba(0,0,0,0.12), 
-    0 4px 4px rgba(0,0,0,0.16), 
-    0 8px 8px rgba(0,0,0,0.20);
-}
 
 
 .featured__item-language-list{
@@ -361,7 +339,6 @@ select {
 .contact{ 
     display: flex;
     flex-direction: column;
-    max-width: 80%;
     margin: 0 auto;
     padding: 5em 0;
     
@@ -371,21 +348,13 @@ select {
     display: flex;
 }
 
-.contact__title{
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    text-align: center;
-   font-family: 'Bebas Neue', cursive;
-    color: #F2E4D8;
-    font-size: 2.369rem;
-}
-
 .contact__text{ 
-    padding-top: 0.5em;
-    padding-bottom: 1em;
-    font-family: 'Roboto Condensed', sans-serif;
     color: #F2E4D8;
-    font-size: 1.333rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    padding-bottom: 2em;
+    max-width: 55%;
+    font-size: 1.728rem;
     line-height: 2;
 }
 
@@ -397,7 +366,7 @@ select {
 }
 
 .footer__text{ 
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #F2E4D8;
     font-size: 1rem;
 }
@@ -432,15 +401,6 @@ select {
     .header__nav-brand-list img{
         max-width: 80%;
     }
-      
-
-    .header__title{
-        font-size: 5.61rem;
-    }
-    
-    .header__text {
-        font-size: 1.777rem;
-    }
     
     .header__display img{ 
         margin-left: 10em;
@@ -448,28 +408,6 @@ select {
 
 
 /* specialties*/
-
-    .specialties__title{
-        padding: 1em 0;
-        font-size: 3.157rem;
-    }
-
-    .specialties__item-title{
-        padding: 1em 0;
-        font-size: 2.369rem;
-    }
-    
-    .specialties__item-text{
-        font-size: 1.777rem;
-        line-height: 2;
-    }
-
-
-    .featured__title{ 
-        font-size: 3.157rem;
-        padding: 1em 0;
-    }
-
 
     .featured__item-title {
         justify-content: center;
@@ -488,28 +426,20 @@ select {
         font-size: 1.777rem;
     }
 
-
-    .contact__title{
-        font-size: 3.157rem;
-        
-    }
-    
-    .contact__text{ 
-        font-size: 1.777rem;
-    }
 }
 
 
 
 
-@media screen and (min-width: 1100px)
+@media screen and (min-width: 1200px)
 {
     .button{
         font-size: 1rem;
     }
 
     .row{
-        max-width: 950px ;
+        max-width: 1200px;
+        margin: 0 auto;
     }
 
     .header__nav-list a:hover { 
@@ -520,44 +450,14 @@ select {
         max-width: 80%;
     }
       
-
-    .header__title{
-        font-size: 4.209rem;
-    }
-    
-    .header__text {
-        font-size: 2.369rem;
-    }
     
     .header__display img{ 
         margin-left: 10em;
     }
 
-
 /* specialties*/
 
-    .specialties__title{
-        padding: 1em 0;
-        font-size: 3.157rem;
-    }
-
-    .specialties__item-title{
-        padding: 1em 0;
-        font-size: 2.369rem;
-    }
-    
-    .specialties__item-text{
-        font-size: 2.369rem;
-        line-height: 2;
-    }
-
-
-    .featured__title{ 
-        font-size: 3.157rem;
-        padding: 1.333em 0;
-    }
-
-
+ 
     .featured__item-title {
         justify-content: center;
     }
@@ -573,16 +473,6 @@ select {
     
     .featured__item-heading a{
         font-size: 1.777rem;
-    }
-
-
-    .contact__title{
-        font-size: 3.157rem;
-        
-    }
-    
-    .contact__text{ 
-        font-size: 2.369rem;
     }
 }
 
