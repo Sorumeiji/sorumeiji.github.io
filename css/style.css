@@ -187,8 +187,8 @@ h1 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 1.5em 0;
-    background-color: #25242E;
+    padding: 1em 0em;
+    background-color: #1b1a20f7;
     box-shadow:0 1px 1px 0 1px 1px rgba(0,0,0,0.08), 
     0 2px 2px rgba(0,0,0,0.12), 
     0 4px 4px rgba(0,0,0,0.16), 
@@ -227,11 +227,11 @@ h1 {
     transition: 0.3s ease-in;
 }
 .header__nav-brand-list img{
-    max-width:70%;
+    max-width: 100%;
 }
 
-.header__nav-brand-list-item + .header__nav-brand-list-item{
-    margin-left: 1rem;  
+.header__nav-brand-list-item{
+    margin-right: 2.5rem;  
 }
 
 .header__nav-list{
@@ -305,10 +305,17 @@ h1 {
 
 .featured div {
     display: flex; /* Makes Button Resize properly */
+    width: 100%;
 }
 
 .featured__item {
     display: flex;
+}
+
+
+.featured__item-preview-img {
+    justify-self:  center;
+    align-self: center;
 }
 
 .featured__item-summary{
