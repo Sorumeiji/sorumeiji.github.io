@@ -55,6 +55,8 @@ body {
   text-rendering: optimizeSpeed;
   background-color: #1C1B22;
   position: relative;
+  z-index: 2;
+  overflow-x: hidden;
 }
 
 /* A elements that don't have a class get default styles */
@@ -99,8 +101,10 @@ h1 {
     color: #F2E4D8;
     font-family: 'Bebas Neue', cursive;
     font-size: 4.3rem;
-     padding: 0.5em 0;
-     letter-spacing: 1.2px;
+    padding: 0.5em 0;
+    letter-spacing: 1.2px;
+    position: relative;
+    z-index: 1;
  }
  
  h1:after{
@@ -112,6 +116,33 @@ h1 {
      display: block;
  }
  
+
+ .test{
+     position: absolute;
+     z-index: -1;
+     top: 20%;
+ }
+
+ .test2{
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+}
+
+
+.row{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+ .pos-rel{
+    position: relative;
+    z-index: 1;
+ }
 
 .button{
     text-decoration: none;
@@ -133,6 +164,8 @@ h1 {
 .header {
     margin: 0 auto;
     background-color: #1C1B22;
+    position: relative;
+    z-index: 1;
 }
 
 .header__nav { 
@@ -221,6 +254,8 @@ h1 {
 
 .specialties__summary{
     display: flex;
+    position: relative;
+    z-index: 1;
 }
 
 .specialties__item{
@@ -341,6 +376,8 @@ h1 {
     flex-direction: column;
     margin: 0 auto;
     padding: 5em 0;
+    position: relative;
+    z-index: 1;
     
 }
 
@@ -362,6 +399,7 @@ h1 {
     display: flex; 
     justify-content:center;
     padding: 1em 0;
+    margin-top: 5em;
     background-color: #25242E;
 }
 
@@ -440,6 +478,8 @@ h1 {
     .row{
         max-width: 1200px;
         margin: 0 auto;
+        display: flex;
+        flex-direction: column;
     }
 
     .header__nav-list a:hover { 
