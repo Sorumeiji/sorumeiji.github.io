@@ -116,7 +116,7 @@ h1 {
     color: #F2E4D8;
     font-family: 'Bebas Neue', cursive;
     font-size: 4.3rem;
-    padding: 0.5em 0;
+    padding: 1em 0;
     letter-spacing: 1.2px;
     position: relative;
     z-index: 1;
@@ -125,9 +125,9 @@ h1 {
  h1:after{
      content: " ";
      border-bottom: 1px solid #BF5E5E;
-     max-width: 180px;
+     max-width: 100px;
      position: relative;
-     bottom: 10px;
+     bottom: -1px;
      display: block;
  }
  
@@ -263,6 +263,7 @@ h1 {
 
 .specialties__summary{
     display: flex;
+    flex-direction: column;
     position: relative;
     z-index: 1;
 }
@@ -270,8 +271,8 @@ h1 {
 .specialties__item{
     padding: 1em 0;
 }
+
 .specialties__item-title{
-    padding-top: 0.8em;
     padding-bottom: 0;
     font-family: 'Bebas Neue', cursive;
     color: #F2E4D8;
@@ -287,7 +288,8 @@ h1 {
     margin-right: 2rem;
     margin-top: 1.5rem;
     max-width: 80%;
-    margin: 0 auto;   
+    margin: 0 auto; 
+    padding: 2em 0;  
 }
 
 .featured{ 
@@ -316,7 +318,6 @@ h1 {
 .featured__item-summary{
     display: flex;
     flex-direction: column;
-    margin-left: 2em;
 }
 
 .featured__item-summary h2 {
@@ -420,7 +421,7 @@ h1 {
 .footer__text{ 
     font-family: 'Bebas Neue', cursive;
     color: #F2E4D8;
-    font-size: 1.2rem;
+    font-size: 0.833rem;
 }
 
 
@@ -444,37 +445,64 @@ h1 {
 
 
 @media screen and (min-width: 400px){
+    
+    h1{
+        font-size: 2.488rem;
+    }
+    
+    
     .row{
         max-width: 300px;
+    }
+
+    .header__nav-list a {
+        font-size: 1rem;
+    }
+    .header__nav-brand-list img {
+        max-width: 50%;
+    }
+    .header__text{
+        font-size: 1.2rem;
+        max-width: 90%;
+    }
+
+    .contact__text{
+        font-size: 1.2rem;
+        max-width: 90%;
     }
 }
 
 @media screen and (min-width: 700px)
 {
 
+       h1{
+        font-size: 3.583rem;
+    }
+    
+    .header__nav-list a {
+        font-size: 1.44rem;
+    }
     .row{
         max-width: 500px;
     }
 
     .header__text{
-        font-size: 1.44rem;
+        font-size: 1.2rem;
         max-width: 80%;
     }
-
 
     .contact__text{
         font-size: 1.2rem;
         max-width: 80%;
     }
 
-    .specialties__summary{
-        flex-direction: column;
-    }
-
     .specialties__item-text{
-      
         margin: 0 auto;
         padding: 2em 0;
+    }
+
+    .footer__text{ 
+        font-size: 1rem;
     }
 
 }
@@ -485,7 +513,14 @@ h1 {
     h1{
         font-size: 4.3rem;
     }
-
+    h1:after{
+        content: " ";
+        border-bottom: 1px solid #BF5E5E;
+        max-width: 180px;
+        position: relative;
+        bottom: 10px;
+        display: block;
+    }
     .row{
         max-width: 1100px;
         flex-direction: column;
@@ -499,7 +534,13 @@ h1 {
         max-width: 55%;
     }
 
+    .header__nav-list a {
+        font-size: 1.728rem;
+    }
 
+    .header__nav-brand-list img {
+        max-width: 100%;
+    }
     .contact__text{ 
         color: #F2E4D8;
         font-family: 'Roboto', sans-serif;
@@ -523,6 +564,10 @@ h1 {
         flex-direction: row
     }
 
+    .featured__item-summary{
+        margin-left: 2em;
+    }
+
     .featured__item-summary p{
         max-width: 55%;
         text-align: left;
@@ -533,6 +578,10 @@ h1 {
         justify-content: flex-start;
         width: 100%;
     } 
+
+    .footer__text{ 
+        font-size: 1.2rem;
+    }
 }
 
 
