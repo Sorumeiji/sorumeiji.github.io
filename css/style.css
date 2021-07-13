@@ -145,6 +145,9 @@ h1 {
     right: 0;
 }
 
+.resume-btn{
+    display: inline;
+}
 
 .row{
     max-width: 1300px;
@@ -171,9 +174,8 @@ h1 {
 }
 
 .button:hover{
-    background-color:#BF5E5E;
-    color: #F2E4D8;
-    transition: 0.3s ease-out;
+  opacity: 0.8;
+  transition: 0.3s ease-out;
 }
 
 .header {
@@ -208,10 +210,14 @@ h1 {
 .header__nav-list li:last-child a {
     color: #BF5E5E;
 }
+
+.header__nav-list li:last-child a:hover {
+    opacity: 0.8;
+}
+
 .header__nav-list-line {
     border-left: 2px solid #F2E4D8;
     height: 20px;
-    margin-left: 5%;
 }
 
 .header__nav-list a{
@@ -420,15 +426,34 @@ h1 {
 .footer{
     display: flex; 
     justify-content:center;
-    padding: 1em 0;
+    align-items:center;
+    padding: 1.5em 0;
     margin-top: 5em;
     background-color: #25242E;
 }
 
 .footer__text{ 
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Bebas Neue', cursive;
     color: #F2E4D8;
-    font-size: 1rem;
+    font-size: 1.2rem;
+}
+
+
+.footer__list{
+    display:flex;
+    margin-left: 1em;
+    align-items: center;
+    justify-content:center;
+}
+
+.footer__item a{
+    justify-content: space-evenly;
+    color:#F2E4D8;
+}
+
+.footer__item a:hover{
+    color: #BF5E5E;
+    transition: 0.3s ease-out;
 }
 
 
