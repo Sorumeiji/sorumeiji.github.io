@@ -1,0 +1,46 @@
+.contact{ 
+    padding: 5em 0;
+    position: relative;
+    z-index: 1;
+}
+
+.contact div{
+    display: flex;
+}
+
+.contact__text{ 
+    color: #F2E4D8;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    max-width: 55%;
+    font-size: 1.44rem;
+    line-height: 2;
+}
+
+
+@mixin contact--400()
+{
+    .contact__text{
+        font-size: 1.2rem;
+        max-width: 90%;
+    }
+}
+
+@mixin contact--700(){
+    .contact__text{
+        font-size: 1.2rem;
+        max-width: 80%;
+    }
+}
+
+  
+@mixin contact--1300(){
+    .contact__text{ 
+        color: #F2E4D8;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        max-width: 55%;
+        font-size: 1.728rem;
+        line-height: 2;
+    }
+}

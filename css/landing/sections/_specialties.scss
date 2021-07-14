@@ -1,0 +1,61 @@
+.specialties{
+    padding: 4em 0;
+    background-color: #1C1B22;
+}
+
+.specialties__summary{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+}
+
+.specialties__item{
+    padding: 1em 0;
+}
+
+.specialties__item-title{
+    padding-bottom: 0;
+    font-family: 'Bebas Neue', cursive;
+    color: #F2E4D8;
+    font-size: 2.488rem;
+}
+
+.specialties__item-text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #F2E4D8;
+    font-size: 1rem;
+    line-height: 2;
+    margin-right: 2rem;
+    margin-top: 1.5rem;
+    max-width: 80%;
+    margin: 0 auto; 
+    padding: 2em 0;  
+}
+
+@mixin specialties--400()
+{
+    .specialties__item-text{
+        margin: 0 auto;
+        padding: 2em 0;
+    }
+
+}
+
+@mixin specialties--700(){
+
+}
+
+  
+@mixin specialties--1300(){
+    .specialties__summary{
+        flex-direction: row;
+    }
+
+    .specialties__item-text{
+        font-size: 1rem;
+        max-width: 80%;
+        margin: 0;
+    }
+}

@@ -1,0 +1,50 @@
+.footer{
+    display: flex; 
+    justify-content:center;
+    align-items:center;
+    padding: 1.5em 0;
+    margin-top: 5em;
+    background-color: #25242E;
+}
+
+.footer__text{ 
+    font-family: 'Bebas Neue', cursive;
+    color: #F2E4D8;
+    font-size: 0.833rem;
+}
+
+
+.footer__list{
+    display:flex;
+    margin-left: 1em;
+    align-items: center;
+    justify-content:center;
+}
+
+.footer__item a{
+    justify-content: space-evenly;
+    color:#F2E4D8;
+}
+
+.footer__item a:hover{
+    color: #BF5E5E;
+    transition: 0.3s ease-out;
+}
+
+@mixin footer--400()
+{
+
+}
+
+@mixin footer--700(){
+    .footer__text{ 
+        font-size: 1rem;
+    }
+}
+
+  
+@mixin footer--1300(){
+    .footer__text{ 
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,129 @@
+.featured{ 
+    padding: 5em 0;
+    background-color: #1C1B22;
+}
+
+.featured div {
+    display: flex; /* Makes Button Resize properly */
+    justify-content: center;
+}
+
+.featured__item {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+.featured__item-preview-img {
+    justify-self:  center;
+    align-self: center;
+    position: relative;
+    z-index: 1;
+}
+
+.featured__item-summary{
+    display: flex;
+    flex-direction: column;
+}
+
+.featured__item-summary h2 {
+    font-family: 'Bebas Neue', cursive;
+    color: #F2E4D8;
+    font-size: 3.583rem;
+    line-height: 0.9;
+}
+
+.featured__item-summary h3{
+    font-family: 'Bebas Neue', cursive;
+    padding-top: 0.5em;
+    color: #F2E4D8;
+    font-size:1.728rem;
+}
+
+.featured__item-summary p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #F2E4D8;
+    font-size: 1rem;
+    line-height: 2;
+    margin: 0 auto;
+    padding-top: 1em;
+    width: 80%;
+}
+
+
+.featured__item-summary ul li {
+    display: inline-block;
+    font-family: 'Bebas Neue', cursive;
+    color: #BF5E5E;
+    font-size: 0.833rem;
+}
+
+.featured__item-title h4 {
+    opacity: 0.8;
+    font-size: 1rem;
+}
+
+.featured__item-heading{ 
+    display: flex;
+    align-items: center;
+    padding: 0.2em 0;
+    color: #F2E4D8;
+    opacity: 1;
+}
+
+
+.featured__item-heading a{
+    margin-left: 1em;
+    padding: 0.5em 0;
+    color: #F2E4D8;
+    transition: 0.3s ease-in;
+}
+
+
+.featured__item-heading a:hover {
+    transition: 0.3s ease-out;
+    color: #BF5E5E;
+}
+
+
+
+.featured__item-language-list{
+    display: flex;
+    padding: 1em 0;
+   font-family: 'Bebas Neue', cursive;
+    color: #F2E4D8;
+    font-size: 1rem;
+}
+
+@mixin featured--400()
+{
+
+}
+
+@mixin featured--700(){
+
+}
+
+  
+@mixin featured--1300(){
+    .featured__item {
+        flex-direction: row
+    }
+
+    .featured__item-summary{
+        margin-left: 2em;
+    }
+
+    .featured__item-summary p{
+        max-width: 55%;
+        text-align: left;
+        margin: 0;
+    }
+
+    .featured div {
+        justify-content: flex-start;
+        width: 100%;
+    } 
+
+}

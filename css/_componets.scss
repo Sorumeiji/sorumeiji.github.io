@@ -1,0 +1,16 @@
+.button{
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 0.9rem;
+    margin: 3em 0;
+    padding: 0.5em 1.5em;
+    color: #F2E4D8;
+    background-color:#BF5E5E;
+    display: block;
+    transition: 0.3s ease-in;
+}
+
+.button:hover{
+  opacity: 0.8;
+  transition: 0.3s ease-out;
+}

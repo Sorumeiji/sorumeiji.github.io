@@ -1,0 +1,126 @@
+.header {
+    background-color: #1C1B22;
+    position: relative;
+    z-index: 1;
+}
+
+.header__nav { 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em 0em;
+    background-color: #1b1a20f7;
+    box-shadow:0 1px 1px 0 1px 1px rgba(0,0,0,0.08), 
+    0 2px 2px rgba(0,0,0,0.12), 
+    0 4px 4px rgba(0,0,0,0.16), 
+    0 8px 8px rgba(0,0,0,0.20);
+}
+
+.header__nav-brand-list, .header__nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__nav-list-item {
+    color: #F2E4D8;
+}
+
+.header__nav-list li:last-child a {
+    color: #BF5E5E;
+}
+
+.header__nav-list li:last-child a:hover {
+    opacity: 0.8;
+}
+
+.header__nav-list-line {
+    border-left: 2px solid #F2E4D8;
+    height: 20px;
+}
+
+.header__nav-list a{
+    color: #F2E4D8;
+    text-decoration: none;
+   font-family: 'Bebas Neue', cursive;
+    font-size: 1rem;
+    transition: 0.3s ease-out;
+}
+
+.header__nav-list a:hover { 
+    color: #BF5E5E;
+    transition: 0.3s ease-in;
+}
+.header__nav-brand-list img{
+    max-width: 100%;
+}
+
+.header__nav-brand-list-item{
+    margin-right: 2.5rem;  
+}
+
+.header__nav-list{
+    display: flex;
+}
+
+.header__content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 5em 0;
+}
+
+
+.header__text {
+    color: #F2E4D8;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.44rem;
+    line-height: 2;
+}
+
+.header__display img{ 
+    margin-left: 5em;
+}
+
+
+@mixin header--400()
+{
+    .header__nav-list a {
+        font-size: 1rem;
+    }
+    .header__nav-brand-list img {
+        max-width: 50%;
+    }
+    .header__text{
+        font-size: 1.2rem;
+        max-width: 90%;
+    }
+}
+
+@mixin header--700(){
+    .header__nav-list a {
+        font-size: 1.44rem;
+    }
+    .header__text{
+        font-size: 1.2rem;
+        max-width: 80%;
+    }
+}
+
+  
+@mixin header--1300(){
+    .header__text {
+        font-size: 1.728rem;
+        line-height: 2;
+        max-width: 55%;
+    }
+
+    .header__nav-list a {
+        font-size: 1.728rem;
+    }
+
+    .header__nav-brand-list img {
+        max-width: 100%;
+    }
+}

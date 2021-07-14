@@ -1,0 +1,27 @@
+@media screen and (min-width: 400px) {
+    @include base--400();
+    @include layout--400();
+    @include header--400();
+    @include specialties--400();
+    @include contact--400();
+    @include footer--400();
+}
+
+@media screen and (min-width: 700px) {
+    @include base--700();
+    @include layout--700();
+    @include header--700();
+    @include specialties--700();
+    @include contact--700();
+    @include footer--700();
+}
+
+@media screen and (min-width: 1300px) {
+    @include base--1300();
+    @include layout--1300();
+    @include header--1300();
+    @include specialties--1300();
+    @include featured--1300();
+    @include contact--1300();
+    @include footer--1300();
+}
