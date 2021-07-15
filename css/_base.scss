@@ -3,7 +3,6 @@
     font-family: 'Roboto', sans-serif;
 */
 
-
 /* Box sizing rules */
 *,
 *::before,
@@ -30,19 +29,17 @@ ul li {
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul,
-ol{
+ol {
   list-style: none;
 }
 
-
-
-ul li + li{
-    margin-left: 1rem;
+ul li + li {
+  margin-left: 1rem;
 }
 
-html{
-    font-size: 16px;
-    scroll-behavior: smooth;
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 /* Set core root defaults */
@@ -54,7 +51,7 @@ html:focus-within {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  background-color: #1C1B22;
+  background-color: #1c1b22;
   position: relative;
   z-index: 2;
   overflow-x: hidden;
@@ -65,17 +62,15 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
-
 .noselect {
-    -webkit-touch-callout: none; /* iOS Safari */
-      -webkit-user-select: none; /* Safari */
-       -khtml-user-select: none; /* Konqueror HTML */
-         -moz-user-select: none; /* Old versions of Firefox */
-          -ms-user-select: none; /* Internet Explorer/Edge */
-              user-select: none; /* Non-prefixed version, currently
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
                                     supported by Chrome, Edge, Opera and Firefox */
-  }
-
+}
 
 /* Make images easier to work with */
 img,
@@ -97,9 +92,9 @@ select {
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {
@@ -110,63 +105,55 @@ select {
   }
 }
 
-
 h1 {
-    color: #F2E4D8;
-    font-family: 'Bebas Neue', cursive;
+  color: #f2e4d8;
+  font-family: "Bebas Neue", cursive;
+  font-size: 4.3rem;
+  padding: 1em 0;
+  letter-spacing: 1.2px;
+  position: relative;
+  z-index: 1;
+}
+
+h1:after {
+  content: " ";
+  border-bottom: 1px solid #bf5e5e;
+  max-width: 100px;
+  position: relative;
+  bottom: -1px;
+  display: block;
+}
+
+.test {
+  position: absolute;
+  z-index: -1;
+  top: 20%;
+}
+
+.test2 {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
+}
+
+@mixin base--400() {
+  h1 {
+    font-size: 2.488rem;
+  }
+}
+
+@mixin base--700() {
+  h1 {
+    font-size: 3.583rem;
+  }
+}
+
+@mixin base--1300() {
+  h1 {
     font-size: 4.3rem;
-    padding: 1em 0;
-    letter-spacing: 1.2px;
-    position: relative;
-    z-index: 1;
- }
- 
- h1:after{
-     content: " ";
-     border-bottom: 1px solid #BF5E5E;
-     max-width: 100px;
-     position: relative;
-     bottom: -1px;
-     display: block;
- }
-
-  .test{
-     position: absolute;
-     z-index: -1;
-     top: 20%;
- }
-
- .test2{
-    position: absolute;
-    z-index: -1;
-    bottom: 0;
-    right: 0;
-}
-
-@mixin base--400()
-{
-    h1{
-      font-size: 2.488rem;
   }
-}
-
-@mixin base--700(){
-    h1{
-      font-size: 3.583rem;
-  }
-}
-
-  
-@mixin base--1300(){
-      h1{
-        font-size: 4.3rem;
-    }
-    h1:after{
-      content: " ";
-      border-bottom: 1px solid #BF5E5E;
-      max-width: 180px;
-      position: relative;
-      bottom: 10px;
-      display: block;
+  h1:after {
+    max-width: 180px;
   }
 }

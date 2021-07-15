@@ -50,7 +50,7 @@ html:focus-within {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  background-color: #1C1B22;
+  background-color: #1c1b22;
   position: relative;
   z-index: 2;
   overflow-x: hidden;
@@ -74,7 +74,7 @@ a:not([class]) {
   /* Internet Explorer/Edge */
   user-select: none;
   /* Non-prefixed version, currently
-     supported by Chrome, Edge, Opera and Firefox */
+                 supported by Chrome, Edge, Opera and Firefox */
 }
 
 /* Make images easier to work with */
@@ -110,7 +110,7 @@ select {
   }
 }
 h1 {
-  color: #F2E4D8;
+  color: #f2e4d8;
   font-family: "Bebas Neue", cursive;
   font-size: 4.3rem;
   padding: 1em 0;
@@ -121,7 +121,7 @@ h1 {
 
 h1:after {
   content: " ";
-  border-bottom: 1px solid #BF5E5E;
+  border-bottom: 1px solid #bf5e5e;
   max-width: 100px;
   position: relative;
   bottom: -1px;
@@ -544,12 +544,7 @@ h1:after {
   }
 
   h1:after {
-    content: " ";
-    border-bottom: 1px solid #BF5E5E;
     max-width: 180px;
-    position: relative;
-    bottom: 10px;
-    display: block;
   }
 
   .row {
