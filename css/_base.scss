@@ -137,6 +137,13 @@ h1:after {
   right: 0;
 }
 
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
 @mixin base--400() {
   h1 {
     font-size: 2.488rem;
